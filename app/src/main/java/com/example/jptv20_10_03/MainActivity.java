@@ -11,4 +11,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    public void Sendmessage(View view){
+        TextView textview = findViewById(R.id.textView);
+        EditView editText = findViewById(R.id.editText);
+        textView.setText("Tere Tulemas, "+ editText.getText())
+    }
 }
